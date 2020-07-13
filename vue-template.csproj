@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>vue_template</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+		<PackageReference Include="HtmlAgilityPack" Version="1.11.24" />
+		<PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+		<PackageReference Include="VueCliMiddleware" Version="3.1.1" />
+	</ItemGroup>
+</Project>
