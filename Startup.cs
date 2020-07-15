@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.SpaServices;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using VueCliMiddleware;
+using Web.Entity;
 
 namespace vue_template
 {
@@ -18,6 +19,7 @@ namespace vue_template
 		// For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
 		public void ConfigureServices(IServiceCollection services)
 		{
+			services.AddDbContext<ApplicationDb>();
 			services.AddControllers();
 			services.AddSpaStaticFiles(o => o.RootPath = "ClientApp");
 		}
